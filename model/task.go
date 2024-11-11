@@ -11,7 +11,7 @@ type Task struct {
 	UserId    int       `json:"user_id" gorm:"not null"`
 }
 
-type TaskRespomse struct {
+type TaskResponse struct {
 	ID        int       `json:"id" gorm:"primaryKey"`
 	Title     string    `json:"title" gorm:"not null"`
 	CreatedAt time.Time `json:"created_at"`
